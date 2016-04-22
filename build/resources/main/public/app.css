@@ -5,8 +5,7 @@ body {
 .title {
   background-color: #1C6623;
   text-align: center;
-  /*font-color: #ADC6C4;*/
-  font-color: GREEN;
+  color: #ADC6C4;
   font-weight: 800;
   font-size: 70px;
   font-style: italic;
