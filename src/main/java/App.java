@@ -31,7 +31,7 @@ public class App {
       String guess = request.queryParams("guess");
       String originalPhrase = request.queryParams("originalPhrase");
 
-      Boolean result = guess.equals(originalPhrase);
+      Boolean result = guess.toLowerCase().equals(originalPhrase.toLowerCase());
       model.put("result", result);
       model.put("originalPhrase", originalPhrase);
       model.put("guess", guess);

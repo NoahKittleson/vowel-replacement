@@ -39,6 +39,16 @@ public class AppTest extends FluentTest {
     submit(".btn");
     fill("#guess").with("This Is A Sequoia");
     submit(".btn");
-    assertThat(pageSource()).contains("true");
+    assertThat(pageSource()).contains("Correct!");
+  }
+
+  @Test
+  public void replacesVowelsAndGuesses_NonCaseSensitive() {
+    goTo("http://localhost:4567");
+    fill("#phrase").with("This Is A Sequoia");
+    submit(".btn");
+    fill("#guess").with("this is a sequoia");
+    submit(".btn");
+    assertThat(pageSource()).contains("Correct!");
   }
 }
