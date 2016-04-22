@@ -20,4 +20,10 @@ public class VowelReplacementTest {
     VowelReplacement newReplacement = new VowelReplacement();
     assertEquals("b-n-n-", newReplacement.replace("banana"));
   }
+
+  @Test
+  public void convertString_ReplacesAsAndEs_String() {
+    VowelReplacement newReplacement = new VowelReplacement();
+    assertEquals("b-nn-d", newReplacement.replace("banned"));
+  }
 }
