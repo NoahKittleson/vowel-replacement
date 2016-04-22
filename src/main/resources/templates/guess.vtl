@@ -1,7 +1,9 @@
 <h3>$parsedPhrase</h3>
 <form action='/result' method='post'>
-  <label>Oh that's easy! It's:</label>
-  <input type = "text" id="guess" name="guess">
-  <input type="hidden" name="originalPhrase" value="$originalPhrase" >
-  <button class="btn" type="submit">Submit</submit>
+  <div class="form-group">
+    <label for="guess">Oh that's easy! It's:</label>
+    <input type = "text" class="form-control" id="guess" name="guess">
+    <input type="hidden" name="originalPhrase" value="$originalPhrase" >
+  </div>
+  <button class="btn btn-default" type="submit">Submit</submit>
 </form>
