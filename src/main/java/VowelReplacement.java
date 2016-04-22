@@ -1,7 +1,7 @@
 public class VowelReplacement {
   public static String replace (String originalPhrase) {
     char[] phraseCharArray = originalPhrase.toCharArray();
-    char[] vowelArray = {'a', 'e', 'i', 'o', 'u'};
+    char[] vowelArray = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
     for (int index = 0; index < phraseCharArray.length; index++) {
       for (char vowel: vowelArray) {
         if (phraseCharArray[index] == vowel) {

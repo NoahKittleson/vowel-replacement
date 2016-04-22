@@ -32,4 +32,10 @@ public class VowelReplacementTest {
     VowelReplacement newReplacement = new VowelReplacement();
     assertEquals("s-q----", newReplacement.replace("sequoia"));
   }
+
+  @Test
+  public void convertString_ReplacesUpperAndLowerCaseVowels_String() {
+    VowelReplacement newReplacement = new VowelReplacement();
+    assertEquals("-b--t -m-t", newReplacement.replace("About Emit"));
+  }
 }

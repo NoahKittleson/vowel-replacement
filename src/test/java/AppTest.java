@@ -18,16 +18,17 @@ public class AppTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  // @Test
-  // public void rootTest() {
-  //   goTo("http://localhost:4567/");
-  //   assertThat(pageSource()).contains("Submit");
-  // }
-  // @Test
-  // public void isAnagram() {
-  //   goTo("http://localhost:4567");
-  //   fill("#word1").with("anagram");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("That is an Anagram!");
-  // }
+  @Test
+  public void rootTest() {
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Enter a Phrase");
+  }
+
+  @Test
+  public void replacesVowels() {
+    goTo("http://localhost:4567");
+    fill("#phrase").with("This Is A Sequoia");
+    submit(".btn");
+    assertThat(pageSource()).contains("Th-s -s - S-q----");
+  }
 }
