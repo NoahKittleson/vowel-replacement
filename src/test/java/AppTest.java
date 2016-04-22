@@ -31,4 +31,13 @@ public class AppTest extends FluentTest {
     submit(".btn");
     assertThat(pageSource()).contains("Th-s -s - S-q----");
   }
+
+  @Test
+  public void replacesVowelsAndGuesses() {
+    goTo("http://localhost:4567");
+    fill("#phrase").with("This Is A Sequoia");
+    submit(".btn");
+    fill("#guess").with("This Is A Sequoia");
+    assertThat(pageSource()).contains("true");
+  }
 }

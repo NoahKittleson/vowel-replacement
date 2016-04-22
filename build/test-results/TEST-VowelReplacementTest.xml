@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VowelReplacementTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-04-22T18:01:50" hostname="Noah-Kittlesons-MacBook-Pro.local" time="0.011">
+<testsuite name="VowelReplacementTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-04-22T20:35:10" hostname="Noah-Kittlesons-MacBook-Pro.local" time="0.001">
   <properties/>
   <testcase name="convertString_ReplacesAsAndEs_String" classname="VowelReplacementTest" time="0.001"/>
-  <testcase name="convertString_ReceivesInputWithNothingToReplace_String" classname="VowelReplacementTest" time="0.001"/>
-  <testcase name="convertString_ReplacesUpperAndLowerCaseVowels_String" classname="VowelReplacementTest" time="0.001"/>
+  <testcase name="convertString_ReceivesInputWithNothingToReplace_String" classname="VowelReplacementTest" time="0.0"/>
+  <testcase name="convertString_ReplacesUpperAndLowerCaseVowels_String" classname="VowelReplacementTest" time="0.0"/>
   <testcase name="convertString_ReplacesAllVowelsButNotY_String" classname="VowelReplacementTest" time="0.0"/>
-  <testcase name="convertString_ReplacesOneLetterInOneLetterWord_String" classname="VowelReplacementTest" time="0.001"/>
-  <testcase name="convertString_ReplacesMultipleAsInAWord_String" classname="VowelReplacementTest" time="0.001"/>
+  <testcase name="convertString_ReplacesOneLetterInOneLetterWord_String" classname="VowelReplacementTest" time="0.0"/>
+  <testcase name="convertString_ReplacesMultipleAsInAWord_String" classname="VowelReplacementTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
