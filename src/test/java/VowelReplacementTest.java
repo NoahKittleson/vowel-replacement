@@ -26,4 +26,10 @@ public class VowelReplacementTest {
     VowelReplacement newReplacement = new VowelReplacement();
     assertEquals("b-nn-d", newReplacement.replace("banned"));
   }
+
+  @Test
+  public void convertString_ReplacesAllVowelsButNotY_String() {
+    VowelReplacement newReplacement = new VowelReplacement();
+    assertEquals("s-q----", newReplacement.replace("sequoia"));
+  }
 }
