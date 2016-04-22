@@ -38,6 +38,7 @@ public class AppTest extends FluentTest {
     fill("#phrase").with("This Is A Sequoia");
     submit(".btn");
     fill("#guess").with("This Is A Sequoia");
+    submit(".btn");
     assertThat(pageSource()).contains("true");
   }
 }
