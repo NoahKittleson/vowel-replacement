@@ -9,9 +9,15 @@ public class VowelReplacementTest {
     assertEquals("grrzl", newReplacement.replace("grrzl"));
   }
 
-  // @Test
-  // public void convertString_ReceivesInputWithNothingToReplace_String() {
-  //   vowelReplacement newReplacement = new vowelReplacement();
-  //   assertEquals("grrzl", newReplacement.replace("grrzl"));
-  // }
+  @Test
+  public void convertString_ReplacesOneLetterInOneLetterWord_String() {
+    VowelReplacement newReplacement = new VowelReplacement();
+    assertEquals("-", newReplacement.replace("a"));
+  }
+
+  @Test
+  public void convertString_ReplacesMultipleAsInAWord_String() {
+    VowelReplacement newReplacement = new VowelReplacement();
+    assertEquals("b-n-n-", newReplacement.replace("banana"));
+  }
 }
